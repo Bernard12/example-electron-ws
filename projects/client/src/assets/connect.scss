@@ -1,0 +1,16 @@
+@import "variables";
+
+.connect {
+  border-radius: 4px;
+  color: $base-text;
+  background-color: $base-success;
+  padding: 1rem;
+  user-select: none;
+
+  transition: background-color 200ms ease-out;
+
+  &:hover {
+    background-color: #70995A;
+    cursor: pointer;
+  }
+}

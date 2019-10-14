@@ -1,0 +1,7 @@
+.chat-message {
+  color: green;
+  > h5 {
+    display: inline;
+    word-break: break-all;
+  }
+}

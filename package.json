@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "boot": "lerna bootstrap",
+    "build": "lerna run --stream build"
+  },
+  "repository": "git+https://github.com/Bernard12/typescript-template.git",
+  "author": "Bernard12 <ivnsimakhin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bernard12/typescript-template/issues"
+  },
+  "homepage": "https://github.com/Bernard12/typescript-template#readme",
+  "description": ""
+}
