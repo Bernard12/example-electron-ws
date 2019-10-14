@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: ["./src/index.tsx", "./src/assets/styles.scss"],
@@ -22,6 +23,7 @@ module.exports = {
             }
         ]
     },
+    target: "web",
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
         modules: ["node_modules"]
@@ -38,6 +40,10 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css"
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/main.js' },
+            { from: './package.json' }
+        ])
     ]
 };
